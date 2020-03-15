@@ -6,7 +6,7 @@ Description: EKSWSV1
 
 Parameters:
 
-  EksClusterName:
+  EksClusterName: udacity
     Type: String
     Description: The name of the EKS cluster created
     Default: 
@@ -14,7 +14,7 @@ Parameters:
     MaxLength: 100
     ConstraintDescription: You must enter the EKS cluster name
 
-  GitSourceRepo:
+  GitSourceRepo: herrmann1981/FSND-Deploy-Flask-App-to-Kubernetes-Using-EKS
     Type: String
     Description: GitHub source repository - must contain a Dockerfile and buildspec.yml in the base
     Default: 
@@ -22,7 +22,7 @@ Parameters:
     MaxLength: 100
     ConstraintDescription: You must enter a GitHub repository name
 
-  GitBranch:
+  GitBranch: master
     Type: String
     Default: master
     Description: GitHub git repository branch - change triggers a new build
@@ -30,7 +30,7 @@ Parameters:
     MaxLength: 100
     ConstraintDescription: You must enter a GitHub repository branch name
 
-  GitHubToken:
+  GitHubToken: b85629036fafc4d48e858efcd454c6bdb13a114d
     Type: String
     NoEcho: true
     Description: GitHub API token - see https://github.com/blog/1509-personal-api-tokens
@@ -38,7 +38,7 @@ Parameters:
     MaxLength: 100
     ConstraintDescription: You must enter a GitHub personal access token
 
-  GitHubUser:
+  GitHubUser: herrmann1981
     Type: String
     Default:
     Description: GitHub username or organization
@@ -54,7 +54,7 @@ Parameters:
     MaxLength: 100
     ConstraintDescription: You must enter a CodeBuild Docker image
 
-  KubectlRoleName:
+  KubectlRoleName: 181707536469
     Type: String
     Default: 
     Description: IAM role used by kubectl to interact with EKS cluster
